@@ -8,3 +8,6 @@ The program can be implemented on a larger scale using Google Sheets to avoid te
 2. Open Google Sheets
 3. Select **Tools > Script editor** in the Menu
 4. Replace existing code with the code copied in *Step 1*
+5. Use `=Chaldean(*Insert Cell here*)` in sheets to convert text to its numerology equivalent.
+
+![Recording](Instructions.gif)
