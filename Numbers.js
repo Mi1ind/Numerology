@@ -1,4 +1,4 @@
-function Chaldean(word) {
+function CHALDEAN(word) {
     var dict = {
         "A": 1,
         "B": 2,
@@ -31,7 +31,21 @@ function Chaldean(word) {
     word = word.toUpperCase();
     i = 0;
     for (x = 0; i < word.length; i++) {
-        x += dict[word[i]]
+        x += dict[word[i]];
     }
     return x;
+}
+
+function SUMDIGITS(n) {
+    return (n - 1) % 9 + 1;
+}
+
+function SUMDATE(date) {
+    var sum = 0;
+    for (var i = 0; i < date.length; i++) {
+        if (/[0-9]/.test(date[i])) {
+            sum += parseInt(date[i])
+        }
+    }
+    return sum;
 }
